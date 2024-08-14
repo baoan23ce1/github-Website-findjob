@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- custom css file link -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./images/logo hight.png">
+   <link rel="apple-touch-icon" sizes="60x60" href="./images/logo hight.png">
+   <link rel="apple-touch-icon" sizes="72x72" href="./images/logo hight.png">
+   <link rel="apple-touch-icon" sizes="76x76" href="./images/logo hight.png">
+   <link rel="apple-touch-icon" sizes="114x114" href="./images/logo hight.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./images/logo hight.png">
+   <link rel="apple-touch-icon" sizes="144x144" href="./images/logo hight.png">
+   <link rel="apple-touch-icon" sizes="152x152" href="./images/logo hight.png">
+   <link rel="apple-touch-icon" sizes="180x180" href="./images/logo hight.png">
+   <link rel="icon" type="image/png" sizes="192x192"  href="./images/logo hight.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/logo hight.png">
+   <link rel="icon" type="image/png" sizes="96x96" href="./images/logo hight.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="./images/logo hight.png">
+   <link rel="manifest" href="/manifest.json">
+   <meta name="msapplication-TileColor" content="#ffffff">
+   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+   <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+<style>
+      body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* .footer {
+    background-color: #001744;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-column h3 {
+    font-size: 2rem;
+    border-bottom: 2px solid #ffcc00;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    font-size: 1.7rem;
+    margin: 10px 0;
+}
+
+.footer-column ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-column a img {
+    margin: 10px 0;
+    display: block;
+}
+
+.footer-social {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-social a img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #ffffff;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+} */
+.success-message {
+            display: none;
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+        }
+</style>
+<body>
+
+   <!-- header section starts -->
+
+    <header class="header">
+
+        <section class="flex">
+
+            <div id="menu-btn" class="fas fa-bars-staggered"></div>
+
+
+        <a href="home.html" class="logo">
+            <i class="fas fa-briefcase"></i>
+            VietnamWorks.</a>
+
+        <nav class="navbar">
+            <a href="home.html">home</a>
+            <a href="about.html">about us</a>
+            <a href="jobs.html">all jobs</a>
+            <a href="contact.html">contact us</a>
+            <a href="login.html">account</a>
+        
+
+            <img src="./images/light.png" id="icon">
+
+            <div class=".animation start-home"></div>
+        </nav>
+       
+        <a href="./posjob.html" class="btn" style="margin-top: 0;">post job</a>
+        
+        </section>
+
+ </header>
+
+
+
+<!-- header section ends -->
+
+<!-- home section starts -->
+
+     <div class="home-container">
+        
+        <section class="home">
+
+            <form action="" method="post">
+                <h3>find your next job</h3>
+                <p>job title <span>*</span></p>
+                <input type="text" name="title" placeholder="keyword, category or company" required  maxlength="20" class="input">
+                <p>job location</p>
+                <input type="text" name="location" placeholder="city, state or country" required  maxlength="50" class="input">
+                <input type="submit" value="search job"  name="search" class="btn">
+            </form>
+
+        </section>
+
+     </div>
+
+<!-- home section ends -->
+
+<!-- category section starts -->
+
+<section class="category">
+    
+    <h1 class="heading">job categories</h1>
+
+    <div class="box-container">
+
+        <a href="#" class="box">
+            <i class="fas fa-code"></i>
+            <div>
+                <h3>development</h3>
+                <span>2200 jobs</span>
+            </div>
+        </a>
+
+        
+        <a href="#" class="box">
+            <i class="fas fa-pen"></i>
+            <div>
+                <h3>designer</h3>
+                <span>500 jobs</span>
+            </div>
+        </a>
+
+        
+        <a href="#" class="box">
+            <i class="fas fa-chalkboard-user"></i>
+            <div>
+                <h3>teacher</h3>
+                <span>1500 jobs</span>
+            </div>
+        </a>
+
+        
+        <a href="#" class="box">
+            <i class="fas fa-bullhorn"></i>
+            <div>
+                <h3>marketing</h3>
+                <span>1200 jobs</span>
+            </div>
+        </a>
+
+        
+        <a href="#" class="box">
+            <i class="fas fa-headset"></i>
+            <div>
+                <h3>service</h3>
+                <span>3100 jobs</span>
+            </div>
+        </a>
+
+        
+        <a href="#" class="box">
+            <i class="fas fa-wrench"></i>
+            <div>
+                <h3>engineer</h3>
+                <span>400 jobs</span>
+            </div>
+        </a>
+
+        
+        <a href="#" class="box">
+            <i class="fas fa-hand-holding-dollar"></i>
+            <div>
+                <h3>finance</h3>
+                <span>1000 jobs</span>
+            </div>
+        </a>
+
+        
+        <a href="#" class="box">
+            <i class="fas fa-person-digging"></i>
+            <div>
+                <h3>labour</h3>
+                <span>4000 jobs</span>
+            </div>
+        </a>
+    </div> 
+</section>
+
+<!-- category section ends -->
+
+<!-- jobs section starts -->
+
+<section class="jobs-container">
+
+        <h1 class="heading">latest jobs</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="company">
+                    <img src="./images/img1.png" alt="">
+                    <div>
+                        <h3>IT infosys co.</h3>
+                        <p>2 days ago</p>
+                    </div>
+                </div>
+                <h3 class="job-title">senior web developer</h3>
+                <p class="location"><i class="fas fa-map-marker-alt"></i>
+                <span>ha noi, vietnam</span></p>
+                <div class="tags">
+                    <p><i class="fas fa-indian-rupee-sign"></i> <span>10k - 25k</span></p>
+                    <p><i class="fas fa-briefcase"></i> <span>part-time</span></p>
+                    <p><i class="fas fa-clock"></i> <span>day shift</span></p>
+                </div>
+                <div class="flex-btn">
+                    <a href="view_job.html" class="btn">view details</a>
+                    <button type="submit" class="far fa-heart" name="save"></button>
+                </div>
+            </div>
+                
+            <div class="box">
+                <div class="company">
+                    <img src="./images/img2.png" alt="">
+                    <div>
+                        <h3>all media ltd</h3>
+                        <p>2 days ago</p>
+                    </div>
+                </div>
+                <h3 class="job-title">qualified developer</h3>
+                <p class="location"><i class="fas fa-map-marker-alt"></i>
+                <span>da nang, vietnam</span></p>
+                <div class="tags">
+                    <p><i class="fas fa-indian-rupee-sign"></i> <span>9000</span></p>
+                    <p><i class="fas fa-briefcase"></i> <span>full-time</span></p>
+                    <p><i class="fas fa-clock"></i> <span>flexible shift</span></p>
+                </div>
+                <div class="flex-btn">
+                    <a href="view_job.html#C1" class="btn">view details</a>
+                    <button class="far fa-heart" ></button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="company">
+                    <img src="./images/img3.png" alt="">
+                    <div>
+                        <h3>software solutions</h3>
+                        <p>posted today</p>
+                    </div>
+                </div>
+                <h3 class="job-title">javascript developer</h3>
+                <p class="location"><i class="fas fa-map-marker-alt"></i>
+                <span>tp.ho chi minh, vietname</span></p>
+                <div class="tags">
+                    <p><i class="fas fa-indian-rupee-sign"></i> <span>10k - 25k</span></p>
+                    <p><i class="fas fa-briefcase"></i> <span>intership</span></p>
+                    <p><i class="fas fa-clock"></i> <span>night shift</span></p>
+                </div>
+                <div class="flex-btn">
+                    <a href="view_job.html#C2" class="btn">view details</a>
+                    <button class="far fa-heart"></button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="company">
+                    <img src="./images/img4.png" alt="">
+                    <div>
+                        <h3>IT world</h3>
+                        <p>19 days today</p>
+                    </div>
+                </div>
+                <h3 class="job-title">junior front-end</h3>
+                <p class="location"><i class="fas fa-map-marker-alt"></i>
+                <span>da nang - tp.ho chi minh, vietname</span></p>
+                <div class="tags">
+                    <p><i class="fas fa-indian-rupee-sign"></i> <span>20k - 50k</span></p>
+                    <p><i class="fas fa-briefcase"></i> <span>contract</span></p>
+                    <p><i class="fas fa-clock"></i> <span>fixed shift</span></p>
+                </div>
+                <div class="flex-btn">
+                    <a href="view_job.html#C3" class="btn">view details</a>
+                    <button class="far fa-heart"></button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="company">
+                    <img src="./images/img5.png" alt="">
+                    <div>
+                        <h3>info statics</h3>
+                        <p>2 days ago</p>
+                    </div>
+                </div>
+                <h3 class="job-title">junior assistant</h3>
+                <p class="location"><i class="fas fa-map-marker-alt"></i>
+                <span>hue, vietname</span></p>
+                <div class="tags">
+                    <p><i class="fas fa-indian-rupee-sign"></i> <span>5000</span></p>
+                    <p><i class="fas fa-briefcase"></i> <span>temperary</span></p>
+                    <p><i class="fas fa-clock"></i> <span>flexible shifts</span></p>
+                </div>
+                <div class="flex-btn">
+                    <a href="view_job.html#C4" class="btn">view details</a>
+                    <button class="far fa-heart"></button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="company">
+                    <img src="./images/img6.png" alt="">
+                    <div>
+                        <h3>mass idea</h3>
+                        <p>2 days today</p>
+                    </div>
+                </div>
+                <h3 class="job-title">PHP developer</h3>
+                <p class="location"><i class="fas fa-map-marker-alt"></i>
+                <span>ha noi - tp.ho chi minh, vietname</span></p>
+                <div class="tags">
+                    <p><i class="fas fa-indian-rupee-sign"></i> <span>30k - 1 lakh</span></p>
+                    <p><i class="fas fa-briefcase"></i> <span>fresher</span></p>
+                    <p><i class="fas fa-clock"></i> <span>fixhed shift</span></p>
+                </div>
+                <div class="flex-btn">
+                    <a href="view_job.html#C5" class="btn">view details</a>
+                    <button class="far fa-heart"></button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="company">
+                    <img src="./images/pngegg.png" alt="">
+                    <div>
+                        <h3>Hardware</h3>
+                        <p>2 days ago</p>
+                    </div>
+                </div>
+                <h3 class="job-title">qualified developer</h3>
+                <p class="location"><i class="fas fa-map-marker-alt"></i>
+                <span>binh duong, vietname</span></p>
+                <div class="tags">
+                    <p><i class="fas fa-indian-rupee-sign"></i> <span>9000</span></p>
+                    <p><i class="fas fa-briefcase"></i> <span>full-time</span></p>
+                    <p><i class="fas fa-clock"></i> <span>flexible shift</span></p>
+                </div>
+                <div class="flex-btn">
+                    <a href="view_job.html" class="btn">view details</a>
+                    <button class="far fa-heart"></button>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="company">
+                    <img src="./images/python.png" alt="">
+                    <div>
+                        <h3>all media ltd</h3>
+                        <p>2 days ago</p>
+                    </div>
+                </div>
+                <h3 class="job-title">qualified developer</h3>
+                <p class="location"><i class="fas fa-map-marker-alt"></i>
+                <span>dong nai, vietname</span></p>
+                <div class="tags">
+                    <p><i class="fas fa-indian-rupee-sign"></i> <span>9000</span></p>
+                    <p><i class="fas fa-briefcase"></i> <span>full-time</span></p>
+                    <p><i class="fas fa-clock"></i> <span>flexible shift</span></p>
+                </div>
+                <div class="flex-btn">
+                    <a href="view_job.html" class="btn">view details</a>
+                    <button class="far fa-heart"></button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="company">
+                    <img src="./images/java.png" alt="">
+                    <div>
+                        <h3>all media ltd</h3>
+                        <p>2 days ago</p>
+                    </div>
+                </div>
+                <h3 class="job-title">qualified developer</h3>
+                <p class="location"><i class="fas fa-map-marker-alt"></i>
+                <span>bac ninh, vietname</span></p>
+                <div class="tags">
+                    <p><i class="fas fa-indian-rupee-sign"></i> <span>9000</span></p>
+                    <p><i class="fas fa-briefcase"></i> <span>full-time</span></p>
+                    <p><i class="fas fa-clock"></i> <span>flexible shift</span></p>
+                </div>
+                <div class="flex-btn">
+                    <a href="view_job.html" class="btn">view details</a>
+                    <button class="far fa-heart"></button>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="jobs.html" class="btn">view all</a>
+        </div>
+
+
+
+
+
+</section>
+
+
+<div id="successMessage" class="success-message">Success! You have saved the job.</div>
+
+
+
+<!-- jobs section ends -->
+
+
+
+<!-- jobs section ends -->
+
+<!-- New section starts -->
+<section class="custom-section">
+    <div class="custom-content">
+        <img src="./images/cv.webp" alt="CV">
+        <div class="text">
+            <h1>“Wow” Your Next Employers With <br><span style="color: #005AFF;">VietnamWorks WowCV</span></h1>
+            <p>Create yours CV now to win your dream jobs
+                It’s quick and always free.</p>
+                <a href="contact.html" class="button">Create CV</a>
+                <button type="submit" name="save"></button>
+        </div>
+    </div>
+</section>
+<!-- New section ends -->
+
+
+
+<section class="swiper mySwiper">
+    <h1 class="sportlight">Featured Companies</h1>
+    <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+
+        <div class="swiper-slide">
+            <a href=""><p>View All</p></a>
+            <div class="outer-padding">
+                <div class="slide-content">
+                    <img src="./images/I1.png" alt="Image 1">
+                    <div class="text-content">
+                        <h1>Senior Salesforce Developer</h1>
+                        <p>Deloitte</p>
+                        <p><i style='font-size:24px' class='fas'>&#xf0a1;</i><a href="https://career.fpt-software.com/jobs/content-marketing-specialist/" target="_blank"> Information</a></p>
+                    </div>
+                </div>
+                <div class="slide-content">
+                    <img src="./images/I2.png" alt="Image 2">
+                    <div class="text-content">
+                        <h1>multimedia communications</h1>
+                        <p>neoscorp</p>
+                        <p><i style='font-size:24px' class='fas'>&#xf0a1;</i><a href="https://career.fpt-software.com/jobs/content-marketing-specialist/" target="_blank"> Information</a></p>
+                    </div>
+                </div>
+                <div class="slide-content">
+                    <img src="./images/I3.png" alt="Image 3">
+                    <div class="text-content">
+                        <h1>Product Engineer (Plush Toys)</h1>
+                        <p>CÔNG TY TNHH SPIN MASTER (VIỆT NAM)</p>
+                        <p><i style='font-size:24px' class='fas'>&#xf0a1;</i><a href="https://career.fpt-software.com/jobs/content-marketing-specialist/" target="_blank"> Information</a></p>
+                    </div>
+                </div>
+                <div class="slide-content">
+                    <img src="./images/vinfast.png" alt="Image 4">
+                    <div class="text-content">
+                        <h1>Purchasing Senior Specialist</h1>
+                        <p> Công Ty Cổ Phần Sản Xuất Và Kinh Doanh VinFast - Thành Viên Của Vingroup</p>
+                        <p><i style='font-size:24px' class='fas'>&#xf0a1;</i><a href="https://career.fpt-software.com/jobs/content-marketing-specialist/" target="_blank"> Information</a></p>
+                    </div>
+                </div>
+                <div class="slide-content">
+                    <img src="./images/I5.png" alt="Image 5">
+                    <div class="text-content">
+                        <h1>Senior IT Comtor / Accelerator</h1>
+                        <p>Công Ty TNHH Cross Việt Nam</p>
+                        <p><i style='font-size:24px' class='fas'>&#xf0a1;</i><a href="https://career.fpt-software.com/jobs/content-marketing-specialist/" target="_blank"> Information</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+            <a href=""><p>View All</p></a>
+            <div class="outer-padding">
+                <div class="slide-content">
+                    <img src="./images/I6.png" alt="Image 6">
+                    <div class="text-content">
+                        <h1>software production</h1>
+                        <p>FPT Software</p>
+                        <div class="tags">
+                            <p><i style='font-size:24px' class='fas'>&#xf0a1;</i><a href="https://career.fpt-software.com/jobs/content-marketing-specialist/" target="_blank"> Information</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-content">
+                    <img src="./images/bank.png" alt="Image 7">
+                    <div class="text-content">
+                        <h1>Senior Investment Analyst</h1>
+                        <p>Công Ty TNHH Techcombank Việt Nam</p>
+                        <p><i style='font-size:24px' class='fas'>&#xf0a1;</i><a href="https://www.vietnamworks.com/company/acb" target="_blank"> Information</a></p>
+                    </div>
+                </div>
+                <div class="slide-content">
+                    <img src="./images/BIDV.png" alt="Image 8">
+                    <div class="text-content">
+                        <h1>Chuyên Viên Quản Lý & Thúc Đẩy Bán (Phát Triển Kinh Doanh) (Ban Khách Hàng Bán Lẻ)</h1>
+                        <p>Ngân Hàng TMCP Đầu Tư & Phát Triển Việt Nam (BIDV)</p>
+                        <p><i style='font-size:24px' class='fas'>&#xf0a1;</i><a href="https://www.vietnamworks.com/company/acb" target="_blank"> Information</a></p>
+                    </div>
+                </div>
+                <div class="slide-content">
+                    <img src="./images/Sacombank.png" alt="Image 9">
+                    <div class="text-content">
+                        <h1>Chuyên Viên Cấp Cao Phát Triển Sản Phẩm Doanh Nghiệp</h1>
+                        <p>SACOMBANK - NGÂN HÀNG TMCP SÀI GÒN THƯƠNG TÍN</p>
+                        <p><i style='font-size:24px' class='fas'>&#xf0a1;</i><a href="https://www.vietnamworks.com/company/acb" target="_blank"> Information</a></p>
+                    </div>
+                </div>
+                <div class="slide-content">
+                    <img src="./images/ACB.png" alt="Image 10">
+                    <div class="text-content">
+                        <h1>HO - Giám Đốc/chuyên Viên Quan Hệ Khách Hàng Doanh Nghiệp Lớn</h1>
+                        <p>Ngân Hàng Thương Mại Cổ Phần Á Châu - ACB</p>
+                        <p><i style='font-size:24px' class='fas'>&#xf0a1;</i><a href="https://www.vietnamworks.com/company/acb" target="_blank"> Information</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Add more slides as needed -->
+    </div>
+    <div class="swiper-pagination"></div>
+</section>
+
+<div class="podcast-player">
+    <img src="./images/img-audio.png" alt="">
+    <div class="podcast-info">
+        <h3>Mất động lực vì làm mãi mà không lên chức, liệu có nên nhảy việc?</h3>
+        <p>21 tháng 5 . VietnameWorks</p>
+        <div class="audio-controls">
+            <audio controls>
+                <source src="./images/cam-ch-u-v-i-m-c-l-ng-d-ng-im-vi-khong-dam-b-vi-c-sau-30.mp3" type="audio/mpeg">
+                Trình duyệt của bạn không hơ 
+            </audio>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- footer section starts -->
+
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3>VietnamWorks</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">About VietnamWorks inTECH</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Terms Of Use</a></li>
+                <li><a href="#">Privacy Statement</a></li>
+                <li><a href="#">Operation Regulation Of VietnamWorks E-Commerce Trading Floor</a></li>
+                <li><a href="#">Site Map</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>For Employers</h3>
+            <ul>
+                <li><a href="#">Post Job</a></li>
+                <li><a href="#">Search Resume</a></li>
+                <li><a href="#">Other Products and Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Jobs by location</h3>
+            <ul>
+                <li><a href="#">Ho Chi Minh</a></li>
+                <li><a href="#">Ha Noi</a></li>
+                <li><a href="#">Hai Phong</a></li>
+                <li><a href="#">Da Nang</a></li>
+                <li><a href="#">Can Tho</a></li>
+                <li><a href="#">See all locations</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Jobs by categories</h3>
+            <ul>
+                <li><a href="#">Accounting</a></li>
+                <li><a href="#">Banking</a></li>
+                <li><a href="#">Software developer</a></li>
+                <li><a href="#">IT Support / Help Desk</a></li>
+                <li><a href="#">Civil Engineering</a></li>
+                <li><a href="#">Job search</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Mobile app</h3>
+            <a href="#"><img width="108" height="32" src="./images/mob.png" alt="App Store"></a>
+            <a href="#"><img  width="108" height="32"  src="./images/app.png" alt="Google Play"></a>
+            <h3>Verified by</h3>
+            <a href="#"><img src="./images/bo-cong-thuong.png" alt="Verified Badge"></a>
+            <h3>Follow VietnamWorks on</h3>
+            <div class="footer-social">
+                <a href="#"><img src="./images/facebook.webp" alt="Facebook"></a>
+                <a href="#"><img src="./images/x-.webp" alt="LinkedIn"></a>
+                <a href="#"><img src="./images/in.svg" alt="TikTok"></a>
+                <a href="#"><img src="./images/mail.svg" alt="YouTube"></a>
+                <a href="#"><img src="./images/phone.svg" alt="Spotify"></a>
+            </div>
+        </div>
+    </div>
+
+        <div class="credit">&copy; copyright @ 2024 by <span>mr. BẢO ÂN</span>  | all rights reserved!</div>
+
+
+
+
+
+</footer>
+
+
+
+<!-- footer section ends -->
+
+
+
+
+
+     <!-- custom js file link -->
+     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="js/SCRIPTjs.js"></script>
+    
+    <script>
+   document.addEventListener("DOMContentLoaded", function() {
+    const icon = document.getElementById("icon");
+    const body = document.body;
+    const header = document.querySelector('header');
+    const navbar = document.querySelector('.navbar');
+
+    // Biến để theo dõi trạng thái của nền
+    let isDarkMode = false;
+
+    // Hàm xử lý khi click vào biểu tượng
+    icon.addEventListener("click", function() {
+        // Kiểm tra trạng thái hiện tại và thay đổi màu nền tương ứng
+        if (isDarkMode) {
+            // Nếu đang ở chế độ dark mode, chuyển sang light mode
+            body.style.backgroundColor = "#EEEEEE";
+            header.style.backgroundColor = "#EEEEEE";
+            navbar.style.backgroundColor = "#EEEEEE";
+            icon.src = "./images/light.png";
+            isDarkMode = false;
+        } else {
+            // Ngược lại, nếu đang ở chế độ light mode, chuyển sang dark mode
+            body.style.backgroundColor = "#3C3C3C";
+            header.style.backgroundColor = "#3C3C3C";
+            navbar.style.backgroundColor = "#3C3C3C";
+            icon.src = "./images/black.png";
+            isDarkMode = true;
+        }
+    });
+});
+
+        </script>
+          
+
+          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+          <script>
+              document.addEventListener("DOMContentLoaded", function() {
+                  var swiper = new Swiper(".mySwiper", {
+                      spaceBetween: 30,
+                      centeredSlides: true,
+                      autoplay: {
+                          delay: 2500,
+                          disableOnInteraction: false,
+                      },
+                      pagination: {
+                          el: ".swiper-pagination",
+                          clickable: true,
+                          renderBullet: function (index, className) {
+                              return '<span class="' + className + '">' + (index + 1) + "</span>";
+                          },
+                      },
+                  });
+              });
+          </script>
+    
+</body>
+</html>

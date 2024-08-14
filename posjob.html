@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Job</title>
+
+    <!-- custom css file link -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./images/logo hight.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./images/logo hight.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./images/logo hight.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./images/logo hight.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./images/logo hight.png">
+     <link rel="apple-touch-icon" sizes="120x120" href="./images/logo hight.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./images/logo hight.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./images/logo hight.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/logo hight.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./images/logo hight.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="./images/logo hight.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./images/logo hight.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/logo hight.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+ 
+     <link rel="stylesheet" href="CSS/style.css">
+ 
+
+    <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #28a745;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #218838;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 5px rgba(128, 189, 255, 0.5);
+}
+</style>
+<body>
+    
+
+   <!-- header section starts -->
+
+    <header class="header">
+
+        <section class="flex">
+
+            <div id="menu-btn" class="fas fa-bars-staggered"></div>
+
+
+        <a href="home.html" class="logo">
+            <i class="fas fa-briefcase"></i>
+            VietnamWorks.</a>
+
+        <nav class="navbar">
+            <a href="home.html">home</a>
+            <a href="about.html">about us</a>
+            <a href="jobs.html">all jobs</a>
+            <a href="contact.html">contact us</a>
+            <a href="login.html">account</a>
+        </nav>
+
+        <a href="./posjob.html" class="btn" style="margin-top: 0;">post job</a>
+
+        </section>
+ 
+    </header>
+
+
+  <div class="container">
+        <h1>Đăng Tin Tuyển Dụng</h1>
+        <form id="postJobForm">
+            <div class="form-group">
+                <label for="jobTitle">Tên Công Việc</label>
+                <input type="text" id="jobTitle" name="jobTitle" required>
+            </div>
+            <div class="form-group">
+                <label for="companyName">Tên Công Ty</label>
+                <input type="text" id="companyName" name="companyName" required>
+            </div>
+            <div class="form-group">
+                <label for="location">Địa Điểm</label>
+                <input type="text" id="location" name="location" required>
+            </div>
+            <div class="form-group">
+                <label for="jobType">Loại Công Việc</label>
+                <select id="jobType" name="jobType" required>
+                    <option value="full-time">Toàn Thời Gian</option>
+                    <option value="part-time">Bán Thời Gian</option>
+                    <option value="contract">Hợp Đồng</option>
+                    <option value="internship">Thực Tập</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="description">Mô Tả Công Việc</label>
+                <textarea id="description" name="description" rows="5" required></textarea>
+            </div>
+            <button type="submit">Đăng Tin</button>
+        </form>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer section starts -->
+
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3>VietnamWorks</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">About VietnamWorks inTECH</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Terms Of Use</a></li>
+                <li><a href="#">Privacy Statement</a></li>
+                <li><a href="#">Operation Regulation Of VietnamWorks E-Commerce Trading Floor</a></li>
+                <li><a href="#">Site Map</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>For Employers</h3>
+            <ul>
+                <li><a href="#">Post Job</a></li>
+                <li><a href="#">Search Resume</a></li>
+                <li><a href="#">Other Products and Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Jobs by location</h3>
+            <ul>
+                <li><a href="#">Ho Chi Minh</a></li>
+                <li><a href="#">Ha Noi</a></li>
+                <li><a href="#">Hai Phong</a></li>
+                <li><a href="#">Da Nang</a></li>
+                <li><a href="#">Can Tho</a></li>
+                <li><a href="#">See all locations</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Jobs by categories</h3>
+            <ul>
+                <li><a href="#">Accounting</a></li>
+                <li><a href="#">Banking</a></li>
+                <li><a href="#">Software developer</a></li>
+                <li><a href="#">IT Support / Help Desk</a></li>
+                <li><a href="#">Civil Engineering</a></li>
+                <li><a href="#">Job search</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Mobile app</h3>
+            <a href="#"><img width="108" height="32" src="./images/mob.png" alt="App Store"></a>
+            <a href="#"><img  width="108" height="32"  src="./images/app.png" alt="Google Play"></a>
+            <h3>Verified by</h3>
+            <a href="#"><img src="./images/bo-cong-thuong.png" alt="Verified Badge"></a>
+            <h3>Follow VietnamWorks on</h3>
+            <div class="footer-social">
+                <a href="#"><img src="./images/facebook.webp" alt="Facebook"></a>
+                <a href="#"><img src="./images/x-.webp" alt="LinkedIn"></a>
+                <a href="#"><img src="./images/in.svg" alt="TikTok"></a>
+                <a href="#"><img src="./images/mail.svg" alt="YouTube"></a>
+                <a href="#"><img src="./images/phone.svg" alt="Spotify"></a>
+            </div>
+        </div>
+    </div>
+
+        <div class="credit">&copy; copyright @ 2024 by <span>mr. BẢO ÂN</span>  | all rights reserved!</div>
+
+
+
+
+
+</footer>
+
+
+
+
+<!-- footer section ends -->

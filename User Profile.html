@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <!-- custom css file link -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./images/logo hight.png">
+   <link rel="apple-touch-icon" sizes="60x60" href="./images/logo hight.png">
+   <link rel="apple-touch-icon" sizes="72x72" href="./images/logo hight.png">
+   <link rel="apple-touch-icon" sizes="76x76" href="./images/logo hight.png">
+   <link rel="apple-touch-icon" sizes="114x114" href="./images/logo hight.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./images/logo hight.png">
+   <link rel="apple-touch-icon" sizes="144x144" href="./images/logo hight.png">
+   <link rel="apple-touch-icon" sizes="152x152" href="./images/logo hight.png">
+   <link rel="apple-touch-icon" sizes="180x180" href="./images/logo hight.png">
+   <link rel="icon" type="image/png" sizes="192x192"  href="./images/logo hight.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/logo hight.png">
+   <link rel="icon" type="image/png" sizes="96x96" href="./images/logo hight.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="./images/logo hight.png">
+   <link rel="manifest" href="/manifest.json">
+   <meta name="msapplication-TileColor" content="#ffffff">
+   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+   <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        .profile-header {
+            display: flex;
+            align-items: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .profile-header img {
+            border-radius: 50%;
+            margin-right: 15px;
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+        }
+        .profile-header div {
+            font-size: 18px;
+        }
+        .section-title {
+            font-size: 20px;
+            margin: 20px 0 10px;
+        }
+        .job-list, .saved-jobs {
+            list-style: none;
+            padding: 0;
+        }
+        .job-list li, .saved-jobs li {
+            background: #fafafa;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .job-list li .job-title, .saved-jobs li .job-title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .job-list li .job-company, .saved-jobs li .job-company {
+            color: #888;
+        }
+        .heart-button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 24px;
+            color: #888;
+        }
+        .heart-button.saved {
+            color: red;
+        }
+        .edit-profile-form {
+            margin-top: 20px;
+        }
+        .edit-profile-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .edit-profile-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .edit-profile-form button {
+            padding: 10px 20px;
+            background: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<style>
+         body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+</style>
+<body>
+    
+    <header class="header">
+
+        <section class="flex">
+
+            <div id="menu-btn" class="fas fa-bars-staggered"></div>
+
+
+        <a href="home.html" class="logo">
+            <i class="fas fa-briefcase"></i>
+            VietnamWorks.</a>
+
+        <nav class="navbar">
+            <a href="home.html">home</a>
+            <a href="about.html">about us</a>
+            <a href="jobs.html">all jobs</a>
+            <a href="contact.html">contact us</a>
+            <a href="login.html">account</a>
+        
+
+            <img src="./images/light.png" id="icon">
+
+            <div class=".animation start-home"></div>
+        </nav>
+       
+        <a href="./posjob.html" class="btn" style="margin-top: 0;">post job</a>
+        
+        </section>
+
+ </header>
+    <div class="container">
+        <div class="profile-header">
+            <img id="profile-img" src="default-avatar.png" alt="Profile Picture">
+            <div id="user-email"></div>
+        </div>
+        <div class="section-title">Saved Jobs</div>
+        <ul class="saved-jobs" id="saved-jobs">
+            <!-- Danh sách công việc đã lưu sẽ được thêm vào đây -->
+        </ul>
+        <div class="section-title">Edit Profile</div>
+        <form class="edit-profile-form">
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name">
+            <label for="hometown">Hometown:</label>
+            <input type="text" id="hometown">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob">
+            <label for="profile-pic">Profile Picture:</label>
+            <input type="file" id="profile-pic" accept="image/*">
+            <button type="button" onclick="saveProfile()">Save</button>
+        </form>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const userEmail = localStorage.getItem('userEmail');
+            document.getElementById('user-email').innerText = userEmail;
+    
+            const profileData = JSON.parse(localStorage.getItem('profileData')) || {};
+            if (profileData.fullName) document.getElementById('full-name').value = profileData.fullName;
+            if (profileData.hometown) document.getElementById('hometown').value = profileData.hometown;
+            if (profileData.dob) document.getElementById('dob').value = profileData.dob;
+            if (profileData.profilePic) document.getElementById('profile-img').src = profileData.profilePic;
+    
+            const savedJobs = JSON.parse(localStorage.getItem('savedJobs')) || [];
+            const savedJobsList = document.getElementById('saved-jobs');
+            savedJobs.forEach(job => {
+                const li = document.createElement('li');
+                li.innerHTML = `
+                    <span class="job-title">${job.title}</span>
+                    <span class="job-company">${job.company}</span>
+                `;
+                savedJobsList.appendChild(li);
+            });
+        });
+    
+        function saveProfile() {
+            const fullName = document.getElementById('full-name').value;
+            const hometown = document.getElementById('hometown').value;
+            const dob = document.getElementById('dob').value;
+            const profilePicInput = document.getElementById('profile-pic');
+            const profilePic = profilePicInput.files[0];
+    
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const profilePicUrl = e.target.result;
+                document.getElementById('profile-img').src = profilePicUrl;
+    
+                const profileData = {
+                    fullName: fullName,
+                    hometown: hometown,
+                    dob: dob,
+                    profilePic: profilePicUrl
+                };
+    
+                localStorage.setItem('profileData', JSON.stringify(profileData));
+                alert('Profile saved successfully!');
+            };
+    
+            if (profilePic) {
+                reader.readAsDataURL(profilePic);
+            } else {
+                const profileData = {
+                    fullName: fullName,
+                    hometown: hometown,
+                    dob: dob,
+                    profilePic: document.getElementById('profile-img').src
+                };
+    
+                localStorage.setItem('profileData', JSON.stringify(profileData));
+                alert('Profile saved successfully!');
+            }
+        }
+    </script>
+    </body>
+    </html>
